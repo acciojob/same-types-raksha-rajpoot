@@ -1,17 +1,24 @@
 function isSameType(value1, value2) {
   
-    if (Number.isNaN(value1) && Number.isNaN(value2)) {
-        return true;
-    }
+//     if (Number.isNaN(value1) && Number.isNaN(value2)) {
+//         return true;
+//     }
 
-    // Check if both values are of the same type
-    else if (typeof value1 === typeof value2) {
-        return true;
-    }
-else{
-    return false;
-}
-}
+//     // Check if both values are of the same type
+//     else if (typeof value1 === typeof value2) {
+//         return true;
+//     }    
+// else{
+//     return false;
+// }
+	if(typeof(value1)===typeof(value2)){
+		return true;
+	}else if(value1===value2){
+		return true;
+	}else{
+		return false;
+	}
+}   
 // 	
 
 // do not change the code below.
